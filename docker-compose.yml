@@ -1,6 +1,7 @@
 services:
+
   wordpress:
-    build: .
+    image: bibica/sqlite-wordpress:latest
     restart: always
     ports:
       - 8080:80
