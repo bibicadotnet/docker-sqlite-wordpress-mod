@@ -1,11 +1,18 @@
-version: '3'
-
 services:
-
   wordpress:
-    image: soulteary/sqlite-wordpress:6.5.3
+    build: .
     restart: always
     ports:
       - 8080:80
     volumes:
-      - ./wordpress:/var/www/html
+      - ./wordpress/html:/var/www/html
+      - ./wordpress/custom.ini:/usr/local/etc/php/conf.d/custom.ini
+  wpcli:
+    depends_on:
+      - wordpress
+    image: wordpress:cli
+    entrypoint: wp
+    command: "--info"
+    volumes:
+      - ./wordpress/html:/var/www/html
+    tty: true
