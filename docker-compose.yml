@@ -1,7 +1,7 @@
 services:
 
   wordpress:
-    image: soulteary/sqlite-wordpress:6.5.3
+    image: bibica/sqlite-wordpress:latest
     restart: always
     ports:
       - 8080:80
