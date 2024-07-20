@@ -7,7 +7,7 @@ git clone https://github.com/bibicadotnet/docker-sqlite-wordpress-mod
 cd docker-sqlite-wordpress-mod
 docker build --tag bibica/sqlite-wordpress .
 ```
-### Upload lên docker.io
+### Upload lên hub.docker.com
 ```
 docker login
 ```
