@@ -13,5 +13,5 @@ docker login
 ```
 Điền user và pass
 ```
-docker image push bibica/bibica/docker-sqlite-wordpress
+docker image push bibica/docker-sqlite-wordpress
 ```
