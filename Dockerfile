@@ -1,4 +1,4 @@
-FROM trafex/php-nginx
+FROM trafex/php-nginx:latest
 LABEL org.opencontainers.image.authors="soulteary@gmail.com"
 
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
