@@ -1,8 +1,8 @@
-FROM wordpress:6.6.0-php8.3-apache
+FROM wordpress:php8.3-fpm-alpine
 LABEL org.opencontainers.image.authors="soulteary@gmail.com"
 
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
-ENV WORDPRESS_PREPARE_DIR=/usr/src/wordpress
+ENV WORDPRESS_PREPARE_DIR=/var/www/html
 
 # plugin: https://github.com/WordPress/sqlite-database-integration
 ENV SQLITE_DATABASE_INTEGRATION_VERSION=2.1.11
