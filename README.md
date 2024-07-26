@@ -3,9 +3,9 @@
 ### Tạo Docker
 
 ```
-git clone https://github.com/bibicadotnet/docker-php-fpm-custom
-cd docker-php-fpm-custom
-docker build --tag bibica/php-fpm-8.3-custom .
+git clone https://github.com/bibicadotnet/docker-sqlite-wordpress-mod
+cd docker-sqlite-wordpress-mod
+docker build --tag bibica/sqlite-wordpress .
 ```
 ### Upload lên hub.docker.com
 ```
@@ -13,5 +13,5 @@ docker login
 ```
 Điền user và pass
 ```
-docker image push bibica/php-fpm-8.3-custom
+docker image push bibica/sqlite-wordpress
 ```
