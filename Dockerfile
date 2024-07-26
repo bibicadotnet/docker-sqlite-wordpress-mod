@@ -19,3 +19,4 @@ RUN curl -L -o sqlite-database-integration.tar.gz "https://github.com/WordPress/
     mkdir "${WORDPRESS_PREPARE_DIR}/wp-content/database" && \
     touch "${WORDPRESS_PREPARE_DIR}/wp-content/database/.ht.sqlite" && \
     chmod 640 "${WORDPRESS_PREPARE_DIR}/wp-content/database/.ht.sqlite"
+COPY wordpress/custom.ini /etc/php83/conf.d/zzz_custom.ini
